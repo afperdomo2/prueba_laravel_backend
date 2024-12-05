@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('hotel_id')
                 ->constrained('hotels')
                 ->cascadeOnUpdate()
-                ->restrictOnDelete();
+                ->cascadeOnDelete();
             $table->enum('type', ['Estándar', 'Junior', 'Suite']);
             $table->enum('accommodation', ['Sencilla', 'Doble', 'Triple', 'Cuádruple']);
             $table->integer('quantity');
