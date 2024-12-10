@@ -1,0 +1,29 @@
+# Ignorar archivos y directorios específicos
+
+# Node modules
+node_modules
+npm-debug.log
+yarn.lock
+
+# Directorios de logs y caché
+storage/logs
+storage/framework/cache
+storage/framework/sessions
+storage/framework/views
+
+# Archivos de entorno
+.env
+.env.*
+
+# Archivos y carpetas creados por el sistema operativo o editores de texto
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+
+# Archivos de control de versión y caché
+.git
+.gitignore
+
+# Docker y configuraciones locales
+docker-compose.override.yml
